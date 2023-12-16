@@ -2,5 +2,6 @@
   "alpha": 1.0,
   "lags": 20,
   "random_state": 0,
-  "history_forecast_ratio": null
+  "history_forecast_ratio": null,
+  "use_exogenous": true
 }
