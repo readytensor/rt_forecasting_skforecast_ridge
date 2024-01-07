@@ -16,6 +16,16 @@ The following are the requirements for using your data with this model:
 
 ---
 
+### Covariates Support:
+
+Past :x:
+
+Future :white_check_mark:
+
+Static :white_check_mark:
+
+---
+
 Here are the highlights of this implementation: <br/>
 
 - A **Ridge Forecaster** algorithm built using **Skforecast**
