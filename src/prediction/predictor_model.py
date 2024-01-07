@@ -34,6 +34,7 @@ class Forecaster:
         lags: Union[int, List[int]] = 20,
         use_exogenous: bool = True,
         random_state: int = 0,
+        **kwargs,
     ):
         """Construct a new Ridge Forecaster
 
@@ -63,6 +64,8 @@ class Forecaster:
                 If true, uses covariates in training.
 
             random_state (int): Sets the underlying random seed at model initialization time.
+
+            kwargs (dict): Additional parameters accepted by the sklearn base model.
         """
         self.alpha = alpha
         self.random_state = random_state
@@ -88,6 +91,7 @@ class Forecaster:
         self.base_model = Ridge(
             alpha=self.alpha,
             random_state=self.random_state,
+            **kwargs,
         )
 
         transformer_exog = MinMaxScaler() if has_covariates else None
