@@ -3,6 +3,6 @@
   "lags": null,
   "lags_forecast_ratio": 3,
   "random_state": 0,
-  "history_forecast_ratio": null,
+  "history_forecast_ratio": 10,
   "use_exogenous": true
 }
