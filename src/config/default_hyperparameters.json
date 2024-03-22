@@ -1,7 +1,7 @@
 {
-  "alpha": 0.2,
+  "alpha": 0.5,
   "lags": null,
-  "lags_forecast_ratio": 3,
+  "lags_forecast_ratio": 4,
   "random_state": 0,
   "history_forecast_ratio": 10,
   "use_exogenous": true
