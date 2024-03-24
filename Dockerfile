@@ -3,7 +3,7 @@
 FROM python:3.9.17-slim-bullseye as builder
 
 # Install dependencies in a single layer
-RUN apt-get update && apt-get install -y --no-install-recommends dos2unix \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
